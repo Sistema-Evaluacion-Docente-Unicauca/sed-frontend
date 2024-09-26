@@ -2,7 +2,11 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {
+        path:'app',
+        loadChildren: ()=> import('./modules/layout/layout-routing.module').then(m=>m.LayoutRoutingModule)
+    },
+    {
         path:'**',
-        loadChildren: ()=> import('./modules/support-management/support-management-routing.module').then(m=>m.SupportManagementRoutingModule)
+        redirectTo: 'app'
     }
 ];
