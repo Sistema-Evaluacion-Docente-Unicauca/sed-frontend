@@ -6,7 +6,14 @@ import { CommonModule } from '@angular/common';
 const routes: Routes = [
     {
         path: '',
-        component: MainLayoutComponent
+        component: MainLayoutComponent,
+        children: [
+            {
+                path: 'gestion-soportes',
+                loadChildren: () => import('../support-management/support-management-routing.module').then(m => m.SupportManagementRoutingModule),
+                title: 'Gestión de Soportes'
+            }
+        ]
     }
 ]
 
@@ -15,6 +22,8 @@ const routes: Routes = [
         RouterModule.forChild(routes),
         CommonModule
     ],
-    exports: []
+    exports: [
+        RouterModule
+    ]
 })
 export class LayoutRoutingModule { }

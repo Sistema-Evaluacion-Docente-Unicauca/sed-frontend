@@ -3,4 +3,74 @@
     --blue: #000066;
     --white: #FFFFFF;
     --red-light: #DB141C;
+    --neutral-95: #F2EFFA;
+    --neutral-90: #E4E1EC;
+    --blue-60: #828AE3;
+
+}
+
+
+@font-face {
+    font-family: "FiraSans-Black";
+    src: url("./assets/fonts/FiraSans-Black.ttf") format("truetype");
+}
+@font-face {
+    font-family: "FireSans-Bold";
+    src: url("./assets/fonts/FiraSans-Bold.ttf") format(truetype);
+}
+@font-face {
+    font-family: "FiraSans-Light";
+    src: url("./assets/fonts/FiraSans-Light.ttf") format(truetype);
+}
+@font-face {
+    font-family: "FiraSans-Regular";
+    src: url("./assets/fonts/FiraSans-Regular.ttf") format(truetype);
+}
+@font-face {
+    font-family: "FiraSans-SemiBold";
+    src: url('./assets/fonts/FiraSans-SemiBold.ttf');
+}
+
+/* titles */
+.title-one {
+    font-family: "FiraSans-Black";
+    font-size: 48px;
+    color: var(--blue);
+}
+
+.title-three{
+    font-family: "FiraSans-Bold";
+    font-size: 22px;
+    color: var(--blue);
+}
+
+/* texts */
+.text-body {
+    font-family: "FiraSans-Regular";
+    font-size: 16px;
+    color: var(--blue);
+}
+
+.text-body-heavy {
+    font-family: "FiraSans-SemiBold";
+    font-size: "16px";
+    color: var(--blue);
+}
+
+.text-body-small-r {
+    font-family: "FiraSans-Regular";
+    font-size: 14px;
+    color: var(--blue);
+}
+
+.text-body-small-sb {
+    font-family: "FiraSans-SemiBold";
+    font-size: 14px;
+    color: var(--blue);
+}
+
+.text-body-extra-small {
+    font-family: "FiraSans-Light";
+    font-size: 12px;
+    color: var(--blue);
 }

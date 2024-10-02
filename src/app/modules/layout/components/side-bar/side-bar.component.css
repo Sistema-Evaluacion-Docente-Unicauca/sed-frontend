@@ -1,0 +1,84 @@
+.sidebar-container{
+    background-color: var(--blue);
+    padding-top: 19px;
+}
+
+.image-container{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-left: 40px;
+}
+
+
+.title-menu{
+    font-family: "myGaramond";
+    font-size: 16px;
+}
+
+#sidebar {
+    width: 323px;
+    height: 100vh;
+    background-color: var(--blue);
+    flex-direction: column;
+}
+
+.container-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+}
+.line {
+    height: 2px;
+    background-color: var(--red-light);
+    width: 250px;
+}
+
+.sidebar-nav {
+    text-decoration: none;
+    padding-top: 32px;
+    padding-left: 0px;
+}
+
+.text-body-heavy{
+    color: var(--neutral-95);
+}
+
+.text-body-item{
+    color: var(--neutral-95);
+    font-family: "FiraSans-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sidebar-link {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-one{
+    padding-left: 36px;
+    padding-right: 38px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 50px;
+    cursor: pointer !important;
+}
+
+.menu-two {
+    padding-left: 86px;
+    padding-right: 38px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer !important;
+}
+
+.menu-two:hover{
+    background-color: var(--blue-60);
+}

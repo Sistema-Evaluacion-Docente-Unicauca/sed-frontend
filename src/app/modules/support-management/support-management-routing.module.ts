@@ -5,9 +5,8 @@ import { SupportMangementComponent } from './pages/support-mangement/support-man
 
 const routes: Routes = [
   {
-    path: '**',
+    path: '',
     component: SupportMangementComponent,
-    title: "Gestión de soportes"
   },
 ]
 
@@ -17,6 +16,9 @@ const routes: Routes = [
   imports: [
     RouterModule.forChild(routes),
     CommonModule
+  ],
+  exports: [
+    RouterModule
   ]
 })
 export class SupportManagementRoutingModule { }
