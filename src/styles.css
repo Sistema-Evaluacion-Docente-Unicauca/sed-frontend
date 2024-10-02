@@ -38,6 +38,12 @@
     color: var(--blue);
 }
 
+.title-two {
+    font-family: "FiraSans-Bold";
+    font-size: 32px;
+    color: var(--blue);
+  }
+
 .title-three{
     font-family: "FiraSans-Bold";
     font-size: 22px;
