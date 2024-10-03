@@ -17,7 +17,7 @@
 }
 
 #sidebar {
-    width: 323px;
+    width: 250px;
     height: 100vh;
     background-color: var(--blue);
     flex-direction: column;

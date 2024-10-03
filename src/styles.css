@@ -59,7 +59,7 @@
 
 .text-body-heavy {
     font-family: "FiraSans-SemiBold";
-    font-size: "16px";
+    font-size: 16px;
     color: var(--blue);
 }
 
