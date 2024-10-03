@@ -2,7 +2,11 @@ th,
 td {
     padding: 8px;
 }
-
+.table-wrapper {
+    max-height: 100px;
+    overflow: auto;
+    display:inline-block;
+  }
 .type-source {
     display: flex;
     width: 1275px;
@@ -47,7 +51,7 @@ td {
     display: flex;
     width: 752px;
     height: 49px;
-    padding: var(--Spacing-Size-Size-5, 16px) 12px;
+    padding: 12px;
     justify-content: center;
     align-items: center;
     gap: 10px;

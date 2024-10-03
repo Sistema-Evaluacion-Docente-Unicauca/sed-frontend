@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchResponse } from '../../../../core/labor.interfaces';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-table-activities',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './table-activities.component.html',
   styleUrl: './table-activities.component.css'
 })
@@ -84,6 +85,29 @@ export class TableActivitiesComponent {
                 state: "Diligenciado",
                 rol_evaluator: "Estudiante",
                 evaluator: "Federico Sánchez",
+                evaluated: "Pepito Perez"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        type: "Investigación",
+        activities: [
+          {
+            activities_name:
+              "Ciência cidadã e cocriação como meios de regeneração de rios e minimização de riscos",
+            source: [
+              {
+                name_source: "Autoevaluación",
+                state: "Pendiente firma",
+                evaluator: "Pepito Perez"
+              },
+              {
+                name_source: "Fuente 2",
+                state: "Diligenciado",
+                rol_evaluator: "Coordinador/a",
+                evaluator: "Diana Sánchez",
                 evaluated: "Pepito Perez"
               }
             ]
