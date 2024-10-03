@@ -113,6 +113,29 @@ export class TableActivitiesComponent {
             ]
           }
         ]
+      },
+      {
+        type: "Administración",
+        activities: [
+          {
+            activities_name:
+              "Resolución Superior 005 del 4 de febrero de 2015 - Jefe Departamento",
+            source: [
+              {
+                name_source: "Autoevaluación",
+                state: "Pendiente firma",
+                evaluator: "Pepito Perez"
+              },
+              {
+                name_source: "Fuente 2",
+                state: "Diligenciado",
+                rol_evaluator: "Coordinador/a",
+                evaluator: "Martín López",
+                evaluated: "Pepito Perez"
+              }
+            ]
+          }
+        ]
       }
     ]
   };
