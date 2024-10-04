@@ -1,56 +1,47 @@
-
-
-
-<table class="table" style="margin: 0px;">
-    <thead>
-        <tr style="display: flex;">
-            <th class="head-table-one " style="position: sticky; top: 0; background-color: white; z-index: 1;">
-                <span class="text-body-heavy">Actividades</span>
-            </th>
-            <th class="text-body-heavy head-table-two" style="position: sticky; top: 0; background-color: white; z-index: 1;" colspan="2">
-                <span class="text-body-heavy">Autoevalución</span>
-            </th>
-            <th class="text-body-heavy head-table-three" style="position: sticky; top: 0; background-color: white; z-index: 1;"colspan="4">
-                <span class="text-body-heavy">Fuente 2</span>
-            </th>
-        </tr>
-        <tr style="display:flex; position: sticky; top: 40px; background-color: white; z-index: 1;">
-            <th class="subhead-table-one">
-                <span class="text-body-small-r">Nombre actividad</span>
-            </th>
-            <th class="text-body-small-r subhead-table-two">
-                <span class="text-body-small-r">Estado</span>
-            </th>
-            <th class="text-body-small-r subhead-table-three">
-                <span class="text-body-small-r">Acciones</span>
-            </th>
-            <th class="text-body-small-r subhead-table-four">
-                <span class="text-body-small-r">Evaluador</span>
-            </th>
-            <th class="text-body-small-r subhead-table-four">
-                <span class="text-body-small-r">Rol Evaluador</span>
-            </th>
-            <th class="text-body-small-r subhead-table-two">
-                <span class="text-body-small-r">Estado</span>
-            </th>
-            <th class="text-body-small-r subhead-table-three">
-                <span class="text-body-small-r">Acciones</span>
-            </th>
-        </tr>
-    </thead>
-</table>
-
-
-<div class="table-responsive " style="max-height: 291px; overflow-y: auto;">
-    <table class="table">
+<div class="table-responsive">
+    <table class="table-striped">
+        <thead>
+            <tr style="display: flex;">
+                <th class="head-table-one">
+                    <span class="text-body-heavy">Actividades</span>
+                </th>
+                <th class="text-body-heavy head-table-two" colspan="2">
+                    <span class="text-body-heavy">Autoevalución</span>
+                </th>
+                <th class="text-body-heavy head-table-three">
+                    <span class="text-body-heavy">Fuente 2</span>
+                </th>
+            </tr>
+            <tr style="display:flex;">
+                <th class="subhead-table-one">
+                    <span class="text-body-small-r">Nombre actividad</span>
+                </th>
+                <th class="text-body-small-r subhead-table-two">
+                    <span class="text-body-small-r">Estado</span>
+                </th>
+                <th class="text-body-small-r subhead-table-three">
+                    <span class="text-body-small-r">Acciones</span>
+                </th>
+                <th class="text-body-small-r subhead-table-four">
+                    <span class="text-body-small-r">Evaluador</span>
+                </th>
+                <th class="text-body-small-r subhead-table-four">
+                    <span class="text-body-small-r">Rol Evaluador</span>
+                </th>
+                <th class="text-body-small-r subhead-table-two">
+                    <span class="text-body-small-r">Estado</span>
+                </th>
+                <th class="text-body-small-r subhead-table-three">
+                    <span class="text-body-small-r">Acciones</span>
+                </th>
+            </tr>
+        </thead>
         <tbody *ngFor="let activitieType of laborData.labor; let isLastLaborType = last">
             <tr>
-                <td class="type-source text-body-heavy"><span class="text-body-heavy">{{ activitieType.type }}</span></td>
+                <td class="type-source text-body-heavy"><span class="text-body-heavy">{{ activitieType.type }}</span>
+                </td>
             </tr>
-            <tr 
-                style="display: flex ;" 
-                *ngFor="let activitie of activitieType.activities; let isLastActivitie = last"
-            >
+            <tr style="display: flex ;" *ngFor="let activitie of activitieType.activities; let isLastActivitie = last">
                 <th class="subhead-table-one" [ngStyle]="{
                     'border-bottom': isLastLaborType && isLastActivitie ? '1px solid var(--blue)' : '',
                     'border-radius': isLastLaborType && isLastActivitie ? '0px 0px 0px 8px' : ''

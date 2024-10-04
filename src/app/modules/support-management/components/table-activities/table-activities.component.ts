@@ -3,7 +3,7 @@ import { SearchResponse } from '../../../../core/labor.interfaces';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-table-activities',
+  selector: 'supportManagement-table-activities',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './table-activities.component.html',
