@@ -65,3 +65,16 @@
     border-radius: 8px;
     border: 1px solid var(--blue);
 }
+
+.clearButton {
+  display: flex;
+width: 93.884px;
+height: 35px;
+padding: var(--Spacing-Size-Size-5, 16px) 26px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 100px;
+background: var(--blue);
+}

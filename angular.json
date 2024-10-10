@@ -30,7 +30,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/customStyles/containerStyles.css"
+              "src/customStyles/containerStyles.css",
+              "src/customStyles/dropdownFilter.css"
             ],
             "scripts": []
           },

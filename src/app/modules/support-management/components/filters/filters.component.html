@@ -11,7 +11,7 @@
       <div class="col" style="margin: 1px;">
         <input class="button-main" placeholder="Actividad">
       </div>
-      <div class="col" style="margin: 1px; padding-left: 6px; padding-right: 6px">
+      <!--<div class="col" style="margin: 1px; padding-left: 6px; padding-right: 6px">
         <select class="form-select button-dropdown" id="inputGroupSelect01" >
           <option selected>Tipo Actividad</option>
           <option value="1">Actividades de docencia</option>
@@ -20,31 +20,69 @@
           <option value="4">Administración</option>
           <option value="3">Otros ervicios</option>
         </select>
+      </div>!-->
+      <div class="col" style="margin: 1px; padding-left: 6px; padding-right: 6px">
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <span>{{valuetypeActivity}}</span>
+            <img src="assets\icons\tables\icon-down.svg" alt="">
+          </button>
+          <div class="dropdown-content">
+            <div *ngFor="let opcion of typeActivity;">
+              <a *ngIf="opcion.valor!='default'" href="#" (click)="seleccionarOpcionActivity($event, opcion)">
+                  <span class="text-body-small-r">{{opcion.texto}}</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col" style="margin: 1px;">
         <input class="button-main" placeholder="Nombre evaluador">
       </div>
       <div class="col" style="margin: 1px;">
-        <select class="form-select button-dropdown" id="inputGroupSelect01">
-          <option selected>Rol Evaluador</option>
-          <option value="1">Estudiante</option>
-          <option value="2">Coordinador</option>
-          <option value="3">Jefe de departamento</option>
-        </select>
+        <div  class="dropdown">
+          <button class="dropbtn">
+            <span >{{valueRolEvaluator}}</span>
+            <img src="assets\icons\tables\icon-down.svg" alt="">
+          </button>
+          <div class="dropdown-content">
+            <a href="#" *ngFor="let opcion of rolEvualator" (click)="seleccionarOpcionEvaluator($event, opcion)">
+              <span class="text-body-small-r">{{ opcion.texto }}</span>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="col" style="margin: 1px">
-        <select class="form-select button-dropdown-source" id="inputGroupSelect01">
-          <option selected>Fuente</option>
-          <option value="1">Fuente 1</option>
-          <option value="2">Fuente 2</option>
-        </select>
+        <div  class="dropdown">
+          <button class="dropbtn">
+            <span >{{valueSource}}</span>
+            <img src="assets\icons\tables\icon-down.svg" alt="">
+          </button>
+          <div class="dropdown-content">
+            <a href="#" *ngFor="let opcion of source" (click)="seleccionarOpcionSource($event, opcion)">
+              <span class="text-body-small-r">{{ opcion.texto }}</span>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="col" style="margin: 1px;">
-        <select class="form-select button-dropdown-state" id="inputGroupSelect01">
-          <option selected>Estado</option>
-          <option value="1">Diligenciado</option>
-          <option value="2">Pendiente</option>
-        </select>
+        <div  class="dropdown">
+          <button class="dropbtn">
+            <span >{{valueState}}</span>
+            <img src="assets\icons\tables\icon-down.svg" alt="">
+          </button>
+          <div class="dropdown-content">
+            <a href="#" *ngFor="let opcion of stateSource1" (click)="seleccionarOpcionStateSource($event, opcion)">
+              <span class="text-body-small-r">{{ opcion.texto }}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-9" style="margin-top: 6px ;">
+        <button  class="clearButton" >
+          <span style="color: var(--white);">Limpiar</span>
+        </button>
       </div>
 
     </div>
