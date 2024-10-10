@@ -1,7 +1,7 @@
 
 
 .line {
-    width: 120rem; /* 1920px / 16px (1rem = 16px) */
+    width: 100%; /* 1920px / 16px (1rem = 16px) */
     height: 1px;
     background-color: var(--blue);
     margin: 0 auto;
@@ -9,12 +9,12 @@
     margin-top: 13px;
   }
   
-  /* Ajustar el ancho para pantallas más pequeñas */
+  /* Ajustar el ancho para pantallas más pequeñas
   @media screen and (max-width: 1920px) {
     .line {
       width: 100%;
     }
-  }
+  } */
 
 .button-main {
     display: flex;
@@ -47,7 +47,7 @@
     width: 160px;
     height: 45px;
     padding: 10px 22px 10px 30px;
-    justify-content: space-between;
+  
     align-items: center;
     flex-shrink: 0;
     border-radius: 8px;

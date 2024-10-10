@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './table-activities.component.css'
 })
 export class TableActivitiesComponent {
+  public laborData2: SearchResponse | null | undefined;
   public laborData: SearchResponse = {
     labor: [
       {
@@ -42,7 +43,7 @@ export class TableActivitiesComponent {
               },
               {
                 name_source: "Fuente 2",
-                state: "Pendiente firma",
+                state: "Pendiente",
                 rol_evaluator: "Jefe de departamento",
                 evaluator: "Alejandro Toledo Tovar",
                 evaluated: "Pepito Perez"
@@ -59,7 +60,7 @@ export class TableActivitiesComponent {
               },
               {
                 name_source: "Fuente 2",
-                state: "Diligenciado",
+                state: "Pendiente",
                 rol_evaluator: "Jefe de departamento",
                 evaluator: "Alejandro Toledo Tovar",
                 evaluated: "Pepito Perez"

@@ -82,3 +82,95 @@ a {
 .menu-two:hover{
     background-color: var(--blue-60);
 }
+
+
+
+.nav-container {
+    position: relative;
+    display: inline-block;
+    max-width: 50px; /* $toggleSize + $toggleMargin */
+    max-height: 50px; /* $toggleSize + $toggleMargin */
+    overflow: visible;
+    outline: none;
+  }
+  
+  .nav-container.is-active .nav-toggle:before, 
+  .nav-container.is-active .nav-toggle:after {
+    box-shadow: none;
+  }
+  
+  .nav-container.is-active .nav-toggle:before {
+    transform: rotate(-45deg);
+  }
+  
+  .nav-container.is-active .nav-toggle:after {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container.is-active .nav-items {
+    transform: translate(0, 0);
+  }
+  
+  .nav-toggle {
+    position: relative;
+    width: 40px; /* $toggleSize */
+    height: 40px; /* $toggleSize */
+    margin: 10px; /* $toggleMargin */
+    z-index: 2;
+  }
+  
+  .nav-toggle:hover {
+    cursor: pointer;
+  }
+  
+  .nav-toggle:before, 
+  .nav-toggle:after {
+    content: "";
+    position: absolute;
+    top: 18px; /* $offset - $toggleLine / 2 */
+    left: 0;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 4px; /* $toggleLine */
+    background: var(--blue); /* $toggleColor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .nav-toggle:before {
+    box-shadow: 0 13.33px 0 0 red; /* $offset / 1.5 and $toggleColor */
+  }
+  
+  .nav-toggle:after {
+    box-shadow: 0 -13.33px 0 0 red; /* -$offset / 1.5 and $toggleColor */
+  }
+  
+  .nav-items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 300px;
+    max-width: 50vw;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    padding: 80px 20px 20px 10px;
+    transition: transform 0.3s ease;
+    transform: translate(calc(-100% - 50px), 0);
+    background: #EFEFEF;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px 0;
+    align-content: start;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-items .nav-item {
+    background: #DADADA; /* darken(#EFEFEF, 5%) */
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-items .nav-item:hover {
+    cursor: pointer;
+    background: #C9C9C9; /* darken(#EFEFEF, 10%) */
+  }

@@ -34,6 +34,7 @@ td {
     border-top: 1px solid var(--blue);
     border-right: 1px solid var(--blue);
     border-left: 1px solid var(--blue);
+    background-color: var(--Gray-background);
 }
 
 .head-table-two {
@@ -60,6 +61,7 @@ td {
     border-radius: 0px 8px 0px 0px;
     border-top: 1px solid var(--blue);
     border-right: 1px solid var(--blue);
+    background-color: var(--Gray-background);
 }
 
 .subhead-table-one {
@@ -72,6 +74,7 @@ td {
     border-top: 1px solid var(--blue);
     border-right: 1px solid var(--blue);
     border-left: 1px solid var(--blue);
+    background-color: var(--Gray-background);
 }
 
 .subhead-table-two {
@@ -107,6 +110,7 @@ td {
     flex-shrink: 0;
     border-top: 1px solid var(--blue);
     border-right: 1px solid var(--blue);
+    background-color: var(--Gray-background);
 }
 
 /* @media screen and (max-width: 1024px) {
