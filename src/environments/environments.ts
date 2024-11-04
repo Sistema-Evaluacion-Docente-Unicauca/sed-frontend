@@ -1,3 +1,3 @@
 export const environments = {
-    baseUrl: "ttp://localhost:3000"
+    baseUrl: "http://localhost:8080"
 }
