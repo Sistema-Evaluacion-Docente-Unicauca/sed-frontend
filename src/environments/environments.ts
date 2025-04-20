@@ -1,6 +1,7 @@
 export const environments = {
   baseUrl: 'http://localhost:8080',
   baseUrlStatistics: 'http://localhost:8086',
+  baseUrlAuth: 'http://localhost:8087',
 
   production: false,
   firebaseConfig: {
