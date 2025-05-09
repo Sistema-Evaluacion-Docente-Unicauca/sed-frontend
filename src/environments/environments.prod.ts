@@ -4,6 +4,7 @@ export const environments = {
     baseUrlStatistics: 'https://kubetest.unicauca.edu.co/sed-estadisticas',
     baseUrlAuth: 'https://kubetest.unicauca.edu.co/sed-usuarios',
     baseUrlLaborDocente: 'https://kubetest.unicauca.edu.co/sed-labor',
+    baseUrlEmail: 'https://kubetest.unicauca.edu.co/sed-mensajeria',
 
     firebaseConfig: {
         apiKey: 'AIzaSyDraRIAHEQTxallqQvuEJ42NetIXjbXpf4',
