@@ -1,9 +1,9 @@
 export const environments = {
     production: true,
-    baseUrl: 'http://localhost:8080',
-    baseUrlStatistics: 'http://localhost:8086',
-    baseUrlAuth: 'http://localhost:8087',
-    baseUrlLaborDocente: 'http://localhost:8085',
+    baseUrl: 'https://kubetest.unicauca.edu.co/sed-back',
+    baseUrlStatistics: 'https://kubetest.unicauca.edu.co/sed-estadisticas',
+    baseUrlAuth: 'https://kubetest.unicauca.edu.co/sed-usuarios',
+    baseUrlLaborDocente: 'https://kubetest.unicauca.edu.co/sed-labor',
 
     firebaseConfig: {
         apiKey: 'AIzaSyDraRIAHEQTxallqQvuEJ42NetIXjbXpf4',
